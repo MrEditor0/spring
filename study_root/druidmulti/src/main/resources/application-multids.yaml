@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    local: #代销备库开发线
+      url: jdbc:oracle:thin:@//10.10.86.124:1521/KGDB
+      username: otcts
+      password: otcts
+      driver-class-name: oracle.jdbc.OracleDriver
+      initialSize: 5
+      minIdle: 5
+      validationQuery: SELECT 'x' FROM DUAL
+    remote: #ogg库
+      type: com.alibaba.druid.pool.DruidDataSource
+      url: jdbc:oracle:thin:@//10.10.81.114:1521/EMZQDC
+      username: dataser
+      password: Ax2ws21U
+      driver-class-name: oracle.jdbc.OracleDriver

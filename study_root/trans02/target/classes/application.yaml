@@ -1,0 +1,9 @@
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.haowq.entity
+server:
+  port: 9099
+spring:
+  profiles:
+    active: mult

@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    USER: #用户库
+      type: com.alibaba.druid.pool.DruidDataSource
+      jdbc-url: jdbc:mysql://localhost:3306/test
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+    ORDER: #订单库
+      type: com.alibaba.druid.pool.DruidDataSource
+      jdbc-url: jdbc:mysql://localhost:3306/order
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+
